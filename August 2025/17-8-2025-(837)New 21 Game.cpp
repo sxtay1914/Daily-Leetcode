@@ -8,7 +8,7 @@ public:
         double wsum = (k>0)? 1: 0, res = 0;
         dp[0] = 1;
         //sliding window is from 1 to maxPts
-        
+        //
         for (int i=1; i<=n; i++){
             dp[i] = wsum/maxPts;
             if (i<k){
